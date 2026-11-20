@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Lorena Bernal Belleza · Getafe</title>
+<meta name="description" content="Servicios de Lorena Bernal Belleza en Getafe.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Lorena Bernal Belleza, inicio"><span class="logo-mark">L</span><span class="logo-text"><span class="script">Lorena Bernal</span><small>belleza · Getafe</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="facial">Facial</button>
+  <button class="tab-btn" data-tab="unas">Uñas</button>
+  
+</div>
+
+<div class="tab-panel active" id="facial">
+  <div class="tab-intro"><span class="script">Piel</span><h2>Tratamientos faciales</h2><p>Piel limpia y con glow.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('higiene')"><img src="maps_03.jpg" alt="Higiene facial" loading="lazy"><div class="cat-card-text"><h3>Higiene facial</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('eventos')"><img src="maps_08.jpg" alt="Antes de tu evento" loading="lazy"><div class="cat-card-text"><h3>Antes de tu evento</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="unas">
+  <div class="tab-intro"><span class="script">Uñas</span><h2>Manicura</h2><p>Uñas perfectas que duran.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('manicura')"><img src="maps_04.jpg" alt="Manicura" loading="lazy"><div class="cat-card-text"><h3>Manicura</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('nailart')"><img src="maps_01.jpg" alt="Nail art" loading="lazy"><div class="cat-card-text"><h3>Nail art</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34641075100" target="_blank" rel="noopener" style="color:var(--red)">641 07 51 00</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-higiene"><div class="modal">
+  <button class="modal-close" onclick="closeModal('higiene')" aria-label="Cerrar">×</button>
+  <h3>Higiene facial</h3><p class="modal-sub">Con masaje en la cabeza</p>
+  <div class="svc-row"><div><div class="svc-name">Limpieza facial</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Oxigenación facial</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34641075100?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20higiene%20facial" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-eventos"><div class="modal">
+  <button class="modal-close" onclick="closeModal('eventos')" aria-label="Cerrar">×</button>
+  <h3>Antes de tu evento</h3><p class="modal-sub">Bodas y ocasiones</p>
+  <div class="svc-row"><div><div class="svc-name">Tratamiento de piel para novias</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34641075100?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20antes%20de%20tu%20evento" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-manicura"><div class="modal">
+  <button class="modal-close" onclick="closeModal('manicura')" aria-label="Cerrar">×</button>
+  <h3>Manicura</h3><p class="modal-sub">Color y cuidado</p>
+  <div class="svc-row"><div><div class="svc-name">Manicura</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Uñas acrílicas</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34641075100?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20manicura" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-nailart"><div class="modal">
+  <button class="modal-close" onclick="closeModal('nailart')" aria-label="Cerrar">×</button>
+  <h3>Nail art</h3><p class="modal-sub">Diseños a mano</p>
+  <div class="svc-row"><div><div class="svc-name">Diseños y detalles</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34641075100?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20nail%20art" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para Lorena Bernal Belleza - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="wa-fab" href="https://wa.me/34641075100?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Lorena%20Bernal%20Belleza" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
